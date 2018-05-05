@@ -1,0 +1,9 @@
+{
+  "name": "coordinator-service",
+  "version": "0.0.0",
+  "description": "CoordinatorService",
+  "main": "server.js",
+  "author": {
+    "name": "Jeremy"
+  }
+}
