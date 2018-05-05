@@ -53,6 +53,6 @@ var http_server = http.createServer(function (request, response) {
     response.end();
 });
 
-http_server.listen(8000);
+http_server.listen(80);
 
 server.bind(port);
