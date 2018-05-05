@@ -5,6 +5,8 @@ var port = 1230;
 
 var server = dgram.createSocket('udp4');
 
+
+
 //Just declare for now
 var registeredPartners = [];
 
@@ -43,5 +45,14 @@ server.on('message', (msg, rinfo) => {
         }
     }
 });
+
+//Handle requests for RESTful API
+var http_server = http.createServer(function (request, response) {
+    response.writeHead(200, { 'Content-Type': 'text/plain' });
+    response.write("This is fun!");
+    response.end();
+});
+
+http_server.listen(8000);
 
 server.bind(port);
