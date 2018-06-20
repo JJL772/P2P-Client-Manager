@@ -146,18 +146,6 @@ function handleV1Request(Url, params, request, response) {
             response.end();
         }
     }
-
-    else if (params[1] == "IsBerryCool") {
-        response.writeHead(200, { 'Content-Type': 'text/plain' });
-        response.write('Hell yes! Best person ever!');
-        response.end();
-    }
-
-    else if (params[1] == "IsJeremyReal") {
-        response.writeHead(200, { 'Content-Type': 'text/plain' });
-        response.write('Hello! I am indeed a real person, and, yes, I am 17 years old! :) \n Written to webpage using NodeJS server.');
-        response.end();
-    }
     
     /*
      * In the event of bad requests
